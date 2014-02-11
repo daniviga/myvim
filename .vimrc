@@ -22,10 +22,6 @@ autocmd BufRead,BufNewFile *.js :match ErrorMsg '\%>79v.\+'
 autocmd FileType gitcommit :match ErrorMsg '\%>72v.\+'
 autocmd FileType gitcommit set textwidth=72
 
-
-"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-"match OverLength /\%81v.\+/
-
 " Trim trailing whitespace:
 function TrimWhiteSpace()
     " Don't strip whitespace on these filetypes
