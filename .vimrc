@@ -3,9 +3,15 @@ execute pathogen#infect()
 let g:syntastic_python_checkers=['flake8']
 
 syntax on
-set background=dark
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+
 set number
 highlight LineNr ctermfg=lightblue
+highlight ColorColumn ctermbg=red
 set ruler
 set expandtab
 set tabstop=4
